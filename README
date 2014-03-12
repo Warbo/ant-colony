@@ -1,0 +1,30 @@
+Ant Colony Simulation
+
+A simple simulation of an ant colony, using Python 2.x and PyGame.
+
+The simulation consists of:
+
+A colony (brown)
+Ants (black)
+Food (green)
+Pheremones (blue)
+
+The colony begins at a certain size with a certain number of ants at the centre of
+the screen. The ants will follow a random walk around the screen.
+
+Clicking on the screen will plant seeds, which grow into food. If an ant walks into
+some food, it will pick some up and carry it directly back to the colony, leaving a
+trail of pheremones as it goes, then it will start its random walk again.
+
+Pheremones decay over time, but ants are attracted to them which biases their random
+walks. This makes it likely that ants walking into pheremone trails will follow those
+trails, leading them to the food that caused the trail to be laid. When these ants
+take their food back to the colony, their pheremones will strengthen the trail, making
+it more likely for others to follow later. Once all of the food has been taken, the
+trail will no longer be maintained and will decay away, making the ants roam randomly
+again.
+
+Each piece of food will add 2 to the size of the colony, which lets the colony create
+another ant.
+
+Use Ctrl-C or xkill to quit ;)
